@@ -42,9 +42,16 @@ body{
     border-radius: 3px;
 }
 
+.valuteer_info_margin{
+    margin-bottom: 3px;
+}
+
+.age_margin{
+    margin-top: 3px;
+}
 /* input 관련 */
 .input_group{
-   /* border: none; */
+   border: none;
 }
 
 .input_name{
