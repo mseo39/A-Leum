@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'main.apps.MainConfig',
     'disabled.apps.DisabledConfig',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = "user.User"
+
+LOGOUT_REDIRECT_URL = 'home'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
