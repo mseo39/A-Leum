@@ -9,17 +9,17 @@ body{
 }
 
 /* 처음 타이틀 글씨  */
-.valunteer_title_div {
+.login_title_div {
     text-align: center;
 }
 
-.valunteer_title {
+.login_title {
     font-size: 30px;
     font-weight: bold;
 }
 
 /* 메인 div */
-.valunteer_main{
+.login_main{
     /*정가운데로 띄우기 */
     position:absolute;
     left:50%;
@@ -32,7 +32,7 @@ body{
 }
 
 /* 봉사자 내용 div */
-.valuteer_info { 
+.login_info { 
     /* overflow:hidden; */
     margin-top: 20px;
     padding: 30px;
@@ -42,13 +42,10 @@ body{
     border-radius: 3px;
 }
 
-.valuteer_info_margin{
-    margin-bottom: 3px;
+.login_info_margin{
+    margin-bottom: 5px;
 }
 
-.age_margin{
-    margin-top: 3px;
-}
 /* input 관련 */
 .input_group{
    border: none;
