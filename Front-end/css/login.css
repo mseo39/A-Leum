@@ -42,9 +42,13 @@ body{
     border-radius: 3px;
 }
 
+.login_info_margin{
+    margin-bottom: 5px;
+}
+
 /* input 관련 */
 .input_group{
-   /* border: none; */
+   border: none;
 }
 
 .input_name{
