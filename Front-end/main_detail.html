@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main_detail.css">
-    <title>장애인 디테일</title>
-</head>
-<body>
+{% extends "base.html" %}
+{%load static%}
+{% block title %}장애인 디테일{% endblock %}
+
+{% block link %}
+{% static 'css/main_detail.css' %}
+{% endblock  %}
+
+{% block content %}
     <div class="title_class">
         <h1>장애인 정보</h1>
     </div>
@@ -38,6 +38,4 @@
             </div> 
         </div>   
     </div>
-    
-</body>
-</html>
+    {% endblock %}

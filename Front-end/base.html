@@ -1,11 +1,13 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>베이스</title>
-    <link rel="stylesheet" href="css/base.css">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% block link %}{% endblock %}">
 </head>
 
 <body>
@@ -24,6 +26,9 @@
             </nav>
         </div>
     </header>
+    {% block content %}
+
+        {% endblock %}
     <footer>
         <div class="foo_div">
             <div class="company">

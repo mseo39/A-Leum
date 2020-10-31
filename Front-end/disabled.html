@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{%load static%}
+{% block title %}장애인 정보 등록{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/disabled.css">
-    <title>장애인 정보</title>
-</head>
+{% block link %}
+{% static 'css/disabled.css' %}
+{% endblock  %}
 
-<body>
+{% block content %}
     <div class="disabled_main">
         <div class="disabled_title_div">
             <h1 class="disabled_title">장애인 정보 등록</h1>
@@ -59,7 +57,4 @@
             </div>
         </form>
     </div>
-
-</body>
-
-</html>
+{% endblock %}

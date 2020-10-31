@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/valunteer.css">
-    <title>봉사자 등록</title>
-</head>
-<body>
+{% extends "base.html" %}
+{%load static%}
+{% block title %}봉사자 등록{% endblock %}
+
+{% block link %}
+{% static 'css/valunteer.cs' %}
+{% endblock  %}
+
+{% block content %}
     <div class="valunteer_main">
         <div class="valunteer_title_div">
             <h1 class="valunteer_title">봉사자 등록</h1> 
@@ -53,6 +53,4 @@
             <button class="login-button">확인</button>
         </div>
     </div>
-    
-</body>
-</html>
+    {% endblock %}
