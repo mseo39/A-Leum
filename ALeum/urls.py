@@ -23,5 +23,5 @@ urlpatterns = [
     path('',include('disabled.urls')),
     path('',include('call.urls')),
 
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+    #path('ckeditor/', include('ckeditor_uploader.urls')),
 ]

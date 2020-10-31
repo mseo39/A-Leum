@@ -1,14 +1,9 @@
 from django.db import models
 from user import models as usermodel
-from ckeditor.fields import RichTextField
-from ckeditor_uploader.fields import RichTextUploadingField
+
 
 # Create your models here.
 
-class Detail(models.Model):
-    time = models.DateTimeField(auto_now_add=True, blank=True, null=True)
-    volunteer = models.OneToOneField(usermodel.User,on_delete=models.PROTECT)
-    about = RichTextUploadingField()
 
     
 class Disabled(models.Model):
@@ -22,5 +17,14 @@ class Disabled(models.Model):
     gender = models.CharField(max_length = 10,choices=GENDER_CHOICES)
     age = models.IntegerField(default=0)
     handicap_type = models.CharField(max_length = 50)
-    details = models.ForeignKey(Detail,on_delete=models.CASCADE,blank=True,null=True)
+
+    #details = models.ForeignKey(Detail,blank=True,null=True)
+
+class Detail(models.Model):
+    time = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    volunteer_name = models.CharField(max_length = 50)
+    #volunteer = models.ForeignKey(usermodel.User,on_delete=models.PROTECT)
+    about = models.TextField(null=True,blank=True)
+    disabled = models.ForeignKey(Disabled,on_delete=models.CASCADE,null=True,blank=True)
+    #volunteer = models.ForeignKey(usermodel.User,on_delete=models.PROTECT)
 

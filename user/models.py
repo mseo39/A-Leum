@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from disabled import models as disabledmodel
 
 # Create your models here.
 
@@ -16,4 +17,5 @@ class User(AbstractUser):
     gender = models.CharField(max_length = 10,choices=GENDER_CHOICES)
     age = models.IntegerField(default=0)
     phone = models.CharField(max_length = 30)
+    detail = models.ForeignKey(disabledmodel.Detail,on_delete=models.CASCADE,null=True,blank=True)
 
