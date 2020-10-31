@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>로그인</title>
-</head>
-<body>
+{% extends "base.html" %}
+{%load static%}
+{% block title %}로그인{% endblock %}
+
+{% block link %}
+{% static 'css/login.css' %}
+{% endblock  %}
+
+{% block content %}
     <div class="login_main">
         <div class="login_title_div">
             <h1 class="login_title">로그인</h1> 
@@ -28,6 +28,4 @@
             <button class="login-button">확인</button>
         </div>
     </div>
-    
-</body>
-</html>
+    {% endblock %}

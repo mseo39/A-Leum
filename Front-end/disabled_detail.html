@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/disabled_detail.css">
-    <title>디테일</title>
-</head>
-<body>
+{% extends "base.html" %}
+{%load static%}
+{% block title %}디테일{% endblock %}
+
+{% block link %}
+{% static 'css/disabled_detail.css' %}
+{% endblock  %}
+
+{% block content %}
     <div class="detail_main">
         <div class="detail_title_div">
             <h1 class="detail_title">상세정보 입력</h1> 
@@ -21,6 +21,4 @@
             </a>
         </div>
     </div>
-    
-</body>
-</html>
+    {% endblock %}

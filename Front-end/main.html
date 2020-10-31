@@ -1,13 +1,12 @@
-<html lang="ko">
+{% extends "base.html" %}
+{%load static%}
+{% block title %}main{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+{% block link %}
+{% static 'css/main.css' %}
+{% endblock  %}
 
-<body>
+{% block content %}
     <!--장애인 도움 리스트-->
     <div class="infolist">
         {% for disabled in disabled %}
@@ -30,4 +29,4 @@
             </div>
         </div>
     </div>
-</body>
+    {% endblock %}
