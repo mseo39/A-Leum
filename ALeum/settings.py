@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'main.apps.MainConfig',
     'disabled.apps.DisabledConfig',
+    'call.apps.CallConfig',
     #'ckeditor',
     #'ckeditor_uploader',
 ]
