@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user.apps.UserConfig',
     'main.apps.MainConfig',
-    'disable.apps.DisableConfig',
+    'disabled.apps.DisabledConfig',
 ]
 
 MIDDLEWARE = [
@@ -127,4 +127,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static') # 개발자 관리 파일들을 s
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-AUTH_USER_MODEL = "users.User"
+AUTH_USER_MODEL = "user.User"
